@@ -33,9 +33,9 @@
           </li>
           <li><a href="" class="kontakt-nav">Kontakt</a></li>
 
-          <li>
+           <li>
             <a href="mailto:info@devstudio.com" class="mail-nav">
-              <svg class="icon-mail-nav" fill="currentColor" width="16px" height="12px">
+              <svg class="icon-mail" fill="currentColor">
                 <use href="./images/icons.svg#icon-mail"></use> 
               </svg>info@devstudio.com</a>
           </li>
@@ -221,7 +221,7 @@
         </div>
    </section>
    </main>
-   <footer class="footer">
+      <footer class="footer">
       <div class="container">
         <div class="footer-block">
           <div class="footer-list-1">
@@ -230,8 +230,8 @@
                 Web<span id="studio-footer">Studio</span>
               </li>
               <li class="street-footer">m. Warszawa, Aleje Jerozolimskie 21</li>
-              <li class="mail-tel-footer">info@example.com</li>
-              <li class="mail-tel-footer">+48 111 111 111</li>
+              <li href="mailto:info@devstudio.com" class="mail-footer">info@example.com</li>
+              <li class="tel-footer">+48 111 111 111</li>
             </ul>
           </div>
           <div>
@@ -290,6 +290,31 @@
                 </li>
               </ul>
             </div>
+          </div>
+          <div class="newsletter">
+            <ul>
+              <li>
+                <p class="footer-zapisz">ZAPISZ SIĘ DO NEWSLETTERA</p>
+              </li>
+              <li>
+                <form name="send-newsletter" autocomplete="on" novalidate class="footer-form">
+                  <label for="nletter" >
+                  <input type="email" name="email" id="nletter" placeholder="Email" class="footer-label all-labels"/>
+                  </label>
+                  <button type="submit" class="footer-submit">
+                    <div class="footer-submit-text">Zapisz się</div>
+                    <div> 
+                      <svg
+                        class="footer-plane"
+                        fill="#FFFFFF"
+                        >
+                        <use href="./images/icons.svg#icon-plane"></use>
+                      </svg>
+                      </div>
+                  </button>
+                </form>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

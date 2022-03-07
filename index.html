@@ -33,7 +33,7 @@
 
           <li>
             <a href="mailto:info@devstudio.com" class="mail-nav">
-              <svg class="icon-mail-nav" fill="currentColor" width="16px" height="12px">
+              <svg class="icon-mail" fill="currentColor">
                 <use href="./images/icons.svg#icon-mail"></use> 
               </svg>info@devstudio.com</a>
           </li>
@@ -499,8 +499,8 @@
                 Web<span id="studio-footer">Studio</span>
               </li>
               <li class="street-footer">m. Warszawa, Aleje Jerozolimskie 21</li>
-              <li class="mail-tel-footer">info@example.com</li>
-              <li class="mail-tel-footer">+48 111 111 111</li>
+              <li href="mailto:info@devstudio.com" class="mail-footer">info@example.com</li>
+              <li class="tel-footer">+48 111 111 111</li>
             </ul>
           </div>
           <div>
@@ -560,13 +560,96 @@
               </ul>
             </div>
           </div>
+          <div class="newsletter">
+            <ul>
+              <li>
+                <p class="footer-zapisz">ZAPISZ SIĘ DO NEWSLETTERA</p>
+              </li>
+              <li>
+                <form name="send-newsletter" autocomplete="on" novalidate class="footer-form">
+                  <label for="nletter" >
+                  <input type="email" name="email" id="nletter" placeholder="Email" class="footer-label all-labels"/>
+                  </label>
+
+                  <button type="submit" class="footer-submit">
+                    <div class="footer-submit-text">Zapisz się</div>
+                    <div> 
+                      <svg
+                        class="footer-plane"
+                        fill="#FFFFFF"
+                        >
+                        <use href="./images/icons.svg#icon-plane"></use>
+                      </svg>
+                      </div>
+                  </button>
+                </form>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>
 
 <div class="backdrop is-hidden" data-modal>
-  <div class="modal">
+  <div class="modal" data-modal-window>
     <button type="button" class="close-btn" data-modal-close><div class="x">×</div></button>
+    <div class="modal-title">Zostaw swoje dane w formularzu poniżej</div>
+  <div class="modal-container">
+    <form class="modal-form">
+      <label for="modal-user" class="modal-form-label">
+        <span class="modal-label-text">Imie</span>
+        <div class="rr">
+          <svg class="icon-head"
+             fill="#212121">
+        <use href="./images/icons.svg#icon-head"></use>
+        </svg>
+        <input type="text" class="modal-form-input all-labels" name="username" id="modal-user" required>
+        </div>
+      </label>
+
+      <label for="modal-phone" class="modal-form-label">
+        <span class="modal-label-text">Telefon</span>
+        <div class="rr">
+        <svg class="icon-modalphone"
+             fill="#212121">
+        <use href="./images/icons.svg#icon-modalphone"></use>
+        </svg>
+        <input type="tel" class="modal-form-input all-labels" name="phone_number" id="modal-phone" required/>
+      </div>
+      </label>
+
+      <label for="modal-mail" class="modal-form-label">
+        <span class="modal-label-text">Email</span>
+        <div class="rr">
+          <svg class="icon-modalmail"
+             fill="#212121">
+        <use href="./images/icons.svg#icon-modalmail"></use>
+        </svg>
+        <input type="email" class="modal-form-input all-labels" name="mail" id="modal-mail" required>
+        </div>
+      </label>
+
+      <label for="modal-feedback" class="modal-form-label">
+        <span class="modal-label-text">Komentarz</span>
+        <textarea name="feedback" class="modal-form-feedback all-labels" placeholder="Wprowadź tekst" id="modal-feedback"></textarea>
+      </label>
+
+      <div class="check-container">
+        <input type="checkbox" id="check" name="policy" class="modal-form-policy visually-hidden" required/>
+        <label for="check" class="check-bird">
+          <span class="modal-check-text">
+            Oświadczam iż akceptuję <a href="#" class="reg">Regulamin</a> i <a href="#" class="reg">Politykę Prywatności.</a>
+          </span>
+        </label>
+      </div>
+
+       <div class="modal-btn"> 
+         <button type="submit" class="modal-submit">
+          <span class="modal-submit-text">Wyślij</span>
+        </button>
+      </div>
+    </form>
+  </div>
   </div>
 </div>
 
