@@ -31,7 +31,7 @@ ul {
   padding-left: 0px;
 }
 
-.webstudio-nav {
+.nav__webstudio {
   display: flex;
   align-items: stretch;
   align-content: center;
@@ -49,11 +49,11 @@ ul {
   margin-right: 93px;
 }
 
-#studio-nav {
+.nav__webstudio-color {
   color: #212121;
 }
 
-.agencja-nav-agencja {
+.nav__agencja {
   display: flex;
   align-items: stretch;
   align-content: center;
@@ -88,7 +88,7 @@ ul {
   transition-property: color;
 }
 
-.a-n {
+.nav__agencja-underline {
   height: 4px;
   width: 53px;
   background: #2196f3;
@@ -96,7 +96,7 @@ ul {
   margin-top: 28px;
 }
 
-.portfolio-nav {
+.nav__portfolio {
   display: flex;
   align-items: stretch;
   align-content: center;
@@ -137,7 +137,7 @@ ul {
   margin-top: 28px;
 }
 
-.kontakt-nav {
+.nav__kontakt {
   display: flex;
   align-items: stretch;
   align-content: center;
@@ -160,7 +160,7 @@ ul {
   height: 12px;
 }
 
-.mail-nav {
+.nav__mail {
   display: flex;
   align-items: stretch;
   align-content: center;
@@ -203,10 +203,10 @@ ul {
   align-items: stretch;
 }
 
-.agencja-nav:hover,
-.portfolio-nav:hover,
-.kontakt-nav:hover,
-.mail-nav:hover,
+.nav__agencjaIndex:hover,
+.nav__portfolio:hover,
+.nav__kontakt:hover,
+.nav__mail:hover,
 .tel-nav:hover {
   color: #2196f3;
 }
