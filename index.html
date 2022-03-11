@@ -599,60 +599,60 @@
 
 <div class="backdrop is-hidden" data-modal>
   <div class="modal" data-modal-window>
-    <button type="button" class="close-btn" data-modal-close><div class="x">×</div></button>
-    <div class="modal-title">Zostaw swoje dane w formularzu poniżej</div>
-  <div class="modal-container">
-    <form class="modal-form">
-      <label for="modal-user" class="modal-form-label">
-        <span class="modal-label-text">Imie</span>
-        <div class="rr">
+    <button type="button" class="modal__close" data-modal-close><div class="modal__close-text">×</div></button>
+    <div class="modal__title">Zostaw swoje dane w formularzu poniżej</div>
+  <div>
+    <form>
+      <label for="modal-user" class="modal__label">
+        <span class="modal__label-text">Imie</span>
+        <div class="modal__label-box">
           <svg class="icon-head"
              fill="#212121">
         <use href="./images/icons.svg#icon-head"></use>
         </svg>
-        <input type="text" class="modal-form-input all-labels" name="username" id="modal-user" required>
+        <input type="text" class="modal__input" name="username" id="modal-user" required>
         </div>
       </label>
 
-      <label for="modal-phone" class="modal-form-label">
-        <span class="modal-label-text">Telefon</span>
-        <div class="rr">
+      <label for="modal-phone" class="modal__label">
+        <span class="modal__label-text">Telefon</span>
+        <div class="modal__label-box">
         <svg class="icon-modalphone"
              fill="#212121">
         <use href="./images/icons.svg#icon-modalphone"></use>
         </svg>
-        <input type="tel" class="modal-form-input all-labels" name="phone_number" id="modal-phone" required/>
+        <input type="tel" class="modal__input" name="phone_number" id="modal-phone" required/>
       </div>
       </label>
 
-      <label for="modal-mail" class="modal-form-label">
-        <span class="modal-label-text">Email</span>
-        <div class="rr">
+      <label for="modal-mail" class="modal__label">
+        <span class="modal__label-text">Email</span>
+        <div class="modal__label-box">
           <svg class="icon-modalmail"
              fill="#212121">
         <use href="./images/icons.svg#icon-modalmail"></use>
         </svg>
-        <input type="email" class="modal-form-input all-labels" name="mail" id="modal-mail" required>
+        <input type="email" class="modal__input" name="mail" id="modal-mail" required>
         </div>
       </label>
 
-      <label for="modal-feedback" class="modal-form-label">
-        <span class="modal-label-text">Komentarz</span>
-        <textarea name="feedback" class="modal-form-feedback all-labels" placeholder="Wprowadź tekst" id="modal-feedback"></textarea>
+      <label for="modal-feedback" class="modal__label">
+        <span class="modal__label-text">Komentarz</span>
+        <textarea name="feedback" class="modal__feedback" placeholder="Wprowadź tekst" id="modal-feedback"></textarea>
       </label>
 
-      <div class="check-container">
-        <input type="checkbox" id="check" name="policy" class="modal-form-policy visually-hidden" required/>
+      <div class="checkbox-container">
+        <input type="checkbox" id="check" name="policy" class="policy visually-hidden" required/>
         <label for="check" class="check-bird">
-          <span class="modal-check-text">
-            Oświadczam iż akceptuję <a href="#" class="reg">Regulamin</a> i <a href="#" class="reg">Politykę Prywatności.</a>
+          <span class="policy__text">
+            Oświadczam iż akceptuję <a href="#" class="policy__text-reg">Regulamin</a> i <a href="#" class="policy__text-reg">Politykę Prywatności.</a>
           </span>
         </label>
       </div>
 
        <div class="modal-btn"> 
-         <button type="submit" class="modal-submit">
-          <span class="modal-submit-text">Wyślij</span>
+         <button type="submit" class="modal-btn__submit">
+          <span class="modal-btn__submit-text">Wyślij</span>
         </button>
       </div>
     </form>
