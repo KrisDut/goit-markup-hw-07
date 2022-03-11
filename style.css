@@ -772,14 +772,16 @@ ul {
   height: 24px;
 }
 
-.button-items {
+/* =====> SECTION 1 PORTFOLIO <===== */
+
+.buttons-list {
   display: flex;
   justify-content: center;
   padding-top: 94px;
   padding-left: 0px;
 }
 
-.button-portfolio {
+.buttons-list__item {
   width: 114px;
   height: 38px;
   cursor: pointer;
@@ -790,8 +792,8 @@ ul {
   margin-right: 4px;
 }
 
-.button-portfolio:hover,
-.button-portfolio:focus {
+.buttons-list__item:hover,
+.buttons-list__itemo:focus {
   background: #2196f3;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -799,13 +801,13 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button-portfolio:hover #b {
+.buttons-list__item:hover .buttons-list__item-text {
   color: #ffffff;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-#b {
+.buttons-list__item-text {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -835,7 +837,7 @@ figure {
   margin-top: 30px;
 }
 
-.image-portfolio {
+.item-portfolio {
   width: 370px;
   height: 404px;
   cursor: pointer;
@@ -844,12 +846,12 @@ figure {
   margin-bottom: 8px;
 }
 
-.box-image-portfolio {
+.item-portfolio__box {
   position: relative;
   overflow: hidden;
 }
 
-.overlay-portfolio {
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -868,11 +870,11 @@ figure {
   background: rgba(33, 150, 243, 0.9);
 }
 
-.image-portfolio:hover .overlay-portfolio {
+.item-portfolio:hover .overlay {
   transform: translate(0);
 }
 
-.overlay-text {
+.overlay__text {
   margin: 49px 45px 49px 25px;
 }
 
@@ -880,7 +882,7 @@ a {
   text-decoration: none;
 }
 
-.fcaption {
+.item-portfolio__title {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -895,7 +897,7 @@ a {
   z-index: 1;
 }
 
-.funder {
+.item-portfolio__name {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
